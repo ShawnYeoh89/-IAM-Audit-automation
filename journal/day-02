@@ -1,0 +1,34 @@
+## Day 2
+
+Achievement:
+
+Successfully passed dynamic user access data into OpenAI using n8n variables.
+
+Workflow:
+
+Manual Trigger
+↓
+Edit Fields
+↓
+Basic LLM Chain
+↓
+OpenAI Chat Model
+
+Key Learning:
+
+Static Prompt --> Dynamic Prompt
+
+Used:
+
+{{$json.access_data}}
+
+Result:
+
+Generated IAM access review findings based on dynamic user-role mappings.
+
+Status:
+
+✅ Success
+
+
+  
