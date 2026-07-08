@@ -1,0 +1,39 @@
+# Day 3
+
+Date:
+2026-07-09
+
+Goal:
+Connect a real data source to OpenAI.
+
+Completed:
+✅ Connected Google Sheets
+✅ Read user-role data
+✅ Generated IAM audit findings
+
+What I Learned:
+
+1. System Message
+   = AI identity and rules
+
+2. User Message
+   = Data and task
+
+3. Source for Prompt
+   = Where the user message originates
+
+Big Discovery:
+
+n8n processes each row separately.
+
+Result:
+
+5 sheet rows
+↓
+5 OpenAI calls
+
+Potential cost problem.
+
+Tomorrow:
+
+Learn data aggregation to reduce OpenAI calls.
