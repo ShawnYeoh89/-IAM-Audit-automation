@@ -1,5 +1,3 @@
-# -IAM-Audit-automation
-Im building a  IAM Audit assistant workflow that run by automation and this can help those company that needed a IAM audit review but with automated review based on month , quaterly and annually. 
 # IAM Audit Automation
 
 ## Vision
@@ -8,75 +6,96 @@ Build an AI-powered IAM Audit Assistant using:
 
 - n8n
 - OpenAI
-- Automation
-
-Goal:
-
-Help companies perform monthly, quarterly and annual access reviews automatically.
+- Google Sheets
 
 ---
 
 # Learning Journey
 
-## Day 1 (2026-07-06)
-
-### Goal
-
-Build first AI workflow.
+## Day 1 (2026-07-07)
 
 ### Achievement
 
-- Created n8n account
+- Created first n8n workflow
 - Connected OpenAI API
-- Created first IAM Prompt
-- Generated access review findings
+- Generated IAM risk analysis
 
 ### Learning
 
-Prompt = Instructions for AI.
+Prompt = instructions given to AI.
 
 ---
 
-## Day 2 (2026-07-07)
-
-### Goal
-
-Learn dynamic variables.
+## Day 2 (2026-07-08)
 
 ### Achievement
 
-- Created access_data variable
-- Passed dynamic data into OpenAI
-- Generated IAM risk report from structured data
+- Learned variables
+- Used dynamic data
+- Passed access_data to OpenAI
 
 ### Learning
 
-Static Prompt → Dynamic Data → AI Analysis
+Data Source
+↓
+Variable
+↓
+Prompt
+↓
+AI
+
+---
+
+## Day 3 (2026-07-09)
+
+### Achievement
+
+- Connected Google Sheets
+- Retrieved real user access data
+- Sent user-role dataset to OpenAI
+- Generated IAM audit findings
 
 ### Workflow
 
 Manual Trigger
 ↓
-Edit Fields
+Google Sheets
 ↓
 Basic LLM Chain
 ↓
 OpenAI Chat Model
 
----
+### Key Learning
 
-## Upcoming
+System Message:
+Defines AI identity and rules.
 
-### Day 3
+User Message:
+Provides data and task.
 
-- Read CSV File
-- Parse CSV Data
-- Send CSV Data to OpenAI
+Source for Prompt:
+Defines where User Message comes from.
 
-### Day 4
+### Challenge Found
 
-- Generate Audit Report
+Google Sheets returned 5 items.
 
-### Day 5
+OpenAI was called 5 times.
 
-- Export PDF Report
+Potential issue:
+Higher API cost.
+
+### Next Goal
+
+Aggregate all rows into a single dataset before sending to OpenAI.
+
+Target:
+
+Google Sheets
+↓
+Aggregate
+↓
+1 OpenAI Call
+↓
+1 Audit Report
+``
