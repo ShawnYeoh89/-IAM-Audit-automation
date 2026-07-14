@@ -1,0 +1,29 @@
+# Day 4 Insight
+
+AI should not analyze everything.
+
+AI is expensive.
+
+Rule-based logic should handle:
+
+- Missing manager
+- Dormant account
+- Privileged role
+
+AI should focus on:
+
+- Risk explanation
+- Executive summary
+- Recommendations
+
+Future IAM Audit Assistant Architecture:
+
+Data Source
+↓
+Rule Engine
+↓
+Risk Detection
+↓
+AI Summary
+↓
+Audit Report
