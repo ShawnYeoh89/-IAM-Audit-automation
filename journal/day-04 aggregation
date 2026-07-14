@@ -1,0 +1,17 @@
+## Day 4
+
+Achievement
+
+Learned Aggregation.
+
+Converted multiple spreadsheet rows into a single dataset before sending to OpenAI.
+
+Benefits
+
+- Reduced API calls
+- Reduced token usage
+- Improved scalability
+
+Status
+
+✅ Success
