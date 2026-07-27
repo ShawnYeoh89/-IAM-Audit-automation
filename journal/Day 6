@@ -1,0 +1,41 @@
+## Day 6
+
+### Achievement
+
+Built IAM Rule Engine with multiple rules.
+
+Rules:
+
+- Role contains Admin
+- Role contains Superuser
+- Role contains Controller
+
+### Workflow
+
+Google Sheets
+↓
+IF Rule Engine
+↓
+True Branch: High Risk Users
+↓
+Aggregate
+↓
+Basic LLM Chain
+↓
+OpenAI
+
+### Result
+
+Filtered 5 users down to 3 risk-related users.
+
+Only high-risk records were sent to OpenAI.
+
+Token usage: ~535 tokens.
+
+### Key Learning
+
+Rule Engine should detect risk records first.
+
+AI should explain the risk and generate the audit report.
+
+This reduces cost and improves scalability.
