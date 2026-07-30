@@ -1,0 +1,49 @@
+## Day 8
+
+### Goal
+
+Sort IAM risk records by RiskScore.
+
+### Achievement
+
+Added Sort node after Risk Scoring.
+
+### Workflow
+
+Google Sheets
+↓
+IF Rule Engine
+↓
+Edit Fields Risk Scoring
+↓
+Sort by RiskScore
+↓
+Aggregate
+↓
+Basic LLM Chain
+↓
+OpenAI Chat Model
+
+### Result
+
+Risk records are now sorted from highest risk to lowest risk.
+
+Example:
+
+1. Shawn - Firelog Superuser - RiskScore 95
+2. John - Admin - RiskScore 90
+3. NAN - Inventory Controller - RiskScore 60
+
+### Key Learning
+
+Risk detection is not enough.
+
+A useful IAM audit tool should prioritize findings by risk level and score.
+
+### Token Usage
+
+Approximately 719 tokens.
+
+### Status
+
+✅ Success
